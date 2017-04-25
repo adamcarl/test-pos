@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    android:id="@+id/table">
+
+        <TableRow>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/text"
+               />
+
+            <TextClock android:id="@+id/textClock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/date"/>
+
+
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="CASHIER INTERFACE"
+            android:gravity="center"
+            android:textSize="54px"
+            android:layout_span="3"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_span="2"
+            android:hint="PUT ITEM CODE HERE TO FIND"
+            android:gravity="center"
+            android:inputType="number"
+            android:id="@+id/searchText" />
+        <Button
+            android:layout_width="match_parent"
+            android:text="SEARCH"
+            android:layout_height="match_parent"
+            android:onClick="search"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalSpacing="35dip"
+            android:horizontalSpacing="10dip"
+            android:numColumns="3"
+            android:columnWidth="50dip"
+            android:stretchMode="columnWidth"
+            android:layout_span="3"
+            android:gravity="center">
+
+        </GridView>
+
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PRINT"
+            android:layout_weight="2"
+            android:onClick="print"/>
+    </TableRow>
+</TableLayout>

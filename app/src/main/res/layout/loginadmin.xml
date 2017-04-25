@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="ADMIN FORM"
+            android:gravity="center"
+            android:textSize="72px"
+            android:layout_span="2"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/username"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:hint="USERNAME"
+            android:gravity="center"
+            android:layout_span="2"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:gravity="center"
+            android:layout_span="2" />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:onClick="login"
+
+            />
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:onClick="register"
+            android:text="Register"
+
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+
+        />
+
+    <TableRow>
+
+    </TableRow>
+
+</TableLayout>

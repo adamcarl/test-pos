@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="ADD ITEM"
+            android:gravity="center"
+            android:textSize="54px"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Name"
+            android:id="@+id/addItemName" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Price"
+            android:inputType="numberDecimal"
+            android:id="@+id/addItemPrice" />
+    </TableRow>
+
+    <TableRow>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemDepartment">
+        </Spinner>
+        <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/addItemCategory" />
+    </TableRow>
+
+    <TableRow>
+       <Spinner
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/addItemSubCategory" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:hint="Item Code"
+            android:id="@+id/addItemCode" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:id="@+id/addItemQuantity"/>
+
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="addItem"
+            android:layout_span="2"/>
+
+
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="EDIT ITEM"
+            android:gravity="center"
+            android:textSize="54px"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Name"
+            android:id="@+id/editItemName" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Price"
+            android:inputType="number"
+            android:id="@+id/editItemPrice" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Department"
+            android:id="@+id/editItemDepartment" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Category"
+            android:id="@+id/editItemCategory" />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="Item Subcategory"
+            android:id="@+id/editItemSubCategory" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:hint="Item Code"
+            android:id="@+id/editItemCode" />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:id="@+id/editItemQuantity"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:onClick="editItemSearch"
+            />
+
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="editItem"
+            android:layout_span="2"/>
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="DELETE ITEM"
+            android:gravity="center"
+            android:textSize="54px"
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:hint="Item Code"
+            android:id="@+id/deleteItemCode" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="deleteSubmit"
+            android:layout_span="2"/>
+    </TableRow>
+</TableLayout>

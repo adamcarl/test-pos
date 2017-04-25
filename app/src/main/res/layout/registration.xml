@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="REGISTRATION"
+            android:gravity="center"
+            android:textSize="72px"
+
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:gravity="center"
+            android:id="@+id/firstName"
+            />
+    </TableRow>
+
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:gravity="center"
+            android:id="@+id/lastName"
+            />
+    </TableRow>
+
+
+    <TableRow>
+        <EditText
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:gravity="center"
+            android:id="@+id/username"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:gravity="center"
+            android:layout_column="0" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Register"
+            android:onClick="register"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Exit"
+            android:onClick="exit"
+            />
+    </TableRow>
+
+
+</TableLayout>
